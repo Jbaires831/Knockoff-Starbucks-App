@@ -7,15 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="307dp"
+        android:layout_height="61dp"
         android:layout_marginTop="70dp"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         android:textSize="34sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="372dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/username"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="374dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:layout_editor_absoluteX="14dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/signUpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sign_up_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

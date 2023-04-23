@@ -1,4 +1,4 @@
 package com.example.knockoffstarbucksapp;
 
-public class DashboardActivity {
+public class LandingPage {
 }
